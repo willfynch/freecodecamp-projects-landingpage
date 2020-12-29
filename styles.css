@@ -1,0 +1,175 @@
+:root {
+    --gap-size: 10px;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.content {
+    overflow-y: scroll;
+}
+
+/* GRID AREA DECLARATIONS */
+
+.header {
+    grid-area: header;
+}
+
+.landing {
+    background-color: red;
+    grid-area: landing;
+}
+
+.container2_valueprop {
+    display: grid;
+    padding: 10px;
+    grid-gap: var(--gap-size);
+    background-color: silver;
+    grid-area: container2;
+}
+
+.prop1 {
+    background-color: white;
+    grid-area: prop1;
+}
+
+.prop2 {
+    background-color: white;
+    grid-area: prop2;
+}
+
+.prop3 {
+    background-color: white;
+    grid-area: prop3;
+}
+
+.container3_products {
+    background-color: silver;
+    padding: 10px;
+    display: grid;
+    grid-gap: var(--gap-size);
+    grid-area: container3;
+}
+
+.howitworks {
+    background-color: green;
+    grid-area: howitworks;
+}
+
+.product1 {
+    background-color: white;
+    grid-area: product1;
+}
+
+.product2 {
+    background-color: white;
+    grid-area: product2;
+}
+
+.product3 {
+    background-color: white;
+    grid-area: product3;
+}
+
+.footer {
+    background-color: orange;
+    grid-area: footer;
+}
+
+/* MAIN GRID DECLARATION */
+
+.container1 {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "landing"
+    "container2"
+    "howitworks"
+    "container3"
+    "footer"
+    ;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* CONTAINER 2 VALUE PROPOSITION RESPONSIVE */
+
+@media (min-width: 100px) {
+    .container2_valueprop {
+        display: grid;
+        padding: 10px;
+        grid-template-areas:
+        "prop1"
+        "prop2"
+        "prop3";
+        grid-gap: var(--gap-size);
+        background-color: silver;
+    }
+}
+
+@media (min-width: 600px) {
+    .container2_valueprop {
+        display: grid;
+        padding: 10px;
+        grid-template-areas: "prop1 prop2 prop3";
+        grid-gap: var(--gap-size);
+        background-color: silver;
+    }
+}
+
+
+/* CONTAINER 3 VALUE PROPOSITION RESPONSIVE */
+
+@media (min-width: 100px) {
+    .container3_products {
+        display: grid;
+        padding: 10px;
+        grid-template-areas:
+        "product1"
+        "product2"
+        "product3";
+        grid-gap: var(--gap-size);
+        background-color: silver;
+    }
+}
+
+@media (min-width: 600px) {
+    .container3_products {
+        display: grid;
+        padding: 10px;
+        grid-template-areas: "product1 product2 product3";
+        grid-gap: var(--gap-size);
+        background-color: silver;
+    }
+}
+
+/* STYLING  HEADER */
+
+/* Content declaration for header grid */
+
+.logo {
+    grid-area: logo;
+    justify-self: start;
+}
+
+.navbar {
+    grid-area: navbar;
+    justify-self: end;
+}
+
+.header {
+        background-color: white;
+        display: grid;
+        grid-template-areas:"logo navbar";
+        grid-gap: var(--gap-size);
+        height: 5px;
+        padding: 10px;
+}
