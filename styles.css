@@ -9,12 +9,10 @@
 }
 
 body {
-    overflow: hidden;
+    overflow: scroll;
 }
 
-.content {
-    overflow-y: scroll;
-}
+
 
 /* GRID AREA DECLARATIONS */
 
@@ -83,12 +81,25 @@ body {
     grid-area: footer;
 }
 
-/* MAIN GRID DECLARATION */
+/* MAIN GRIDS DECLARATION */
+
+/* Big container*/
 
 .container1 {
     display: grid;
     grid-template-areas:
     "header"
+    "content";
+    ;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Content container (not the header)*/
+/*.content {
+    overflow-y: scroll;
+    display: grid;
+    grid-template-areas:
     "landing"
     "container2"
     "howitworks"
@@ -97,7 +108,7 @@ body {
     ;
     width: 100vw;
     height: 100vh;
-}
+}*/
 
 
 /* CONTAINER 2 VALUE PROPOSITION RESPONSIVE */
@@ -158,18 +169,30 @@ body {
 .logo {
     grid-area: logo;
     justify-self: start;
+    align-self: center;
+    background-color: blue;
 }
 
 .navbar {
     grid-area: navbar;
     justify-self: end;
+    align-self: center;
+    background-color: blue;
 }
 
+/*  header grid */
+
 .header {
-        background-color: white;
+        background-color: silver;
         display: grid;
         grid-template-areas:"logo navbar";
         grid-gap: var(--gap-size);
-        height: 5px;
-        padding: 10px;
+        height: 8vh;
+        padding: 0 20px 0 20px;
+}
+
+/* STYLING  LANDING */
+
+.landing {
+    height: 60vh;
 }
