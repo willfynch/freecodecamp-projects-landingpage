@@ -116,22 +116,59 @@ But well for now it works  */
 
 /* Products*/
 
-.container3_products {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: red;
+@media (min-width: 700px) {
+    .container3_products {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        background-color: red;
+    }
+
+    .product {
+        border: solid black thin;
+        background-color: blue;
+        height: 0px;
+    }
+
+    #productpic1, #productpic2, #productpic3 {
+        width: 20vw;
+        height: auto;
+    }
+
+    #content1  {
+        position: relative;
+        background-color: yellow;
+        height: 0vh;
+        z-index: -999;
+        width: auto;
+        transition: all 0.3s ease;
+    }
+
+    #productpic1:hover + #content1  {
+
+        background-color: yellow;
+        height: 25vh;
+        z-index: 999;
+        width: auto;
+        transition: all 0.3s ease;
+    }
+
+    #content1:hover  {
+
+        background-color: yellow;
+        height: 25vh;
+        z-index: 999;
+        width: auto;
+        transition: all 0.3s ease;
+    }
+
+
+
 }
 
 
 
-.product1, .product2, .product3 {
-    width: 300px;
-    height: auto;
-    border: solid black thin;
-}
 
 /*
 .product1 {
