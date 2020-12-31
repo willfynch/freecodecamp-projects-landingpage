@@ -45,7 +45,6 @@ body {
 }
 
 .footer {
-    background-color: orange;
     grid-area: footer;
     height: 10vh;
 }
@@ -117,6 +116,24 @@ But well for now it works  */
 
 /* Products*/
 
+.container3_products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: red;
+}
+
+
+
+.product1, .product2, .product3 {
+    width: 300px;
+    height: auto;
+    border: solid black thin;
+}
+
+/*
 .product1 {
     background-color: white;
     grid-area: product1;
@@ -154,6 +171,7 @@ But well for now it works  */
         background-color: silver;
     }
 }
+*/
 
 
 /* CONTENT FORMATTING */
@@ -177,7 +195,7 @@ But well for now it works  */
 }
 
 .navbar ul li {
-    margin: 0 5px 0 5px;
+    margin: 0 8px 0 8px;
 }
 
 .navbar ul li a {
@@ -185,6 +203,12 @@ But well for now it works  */
     color: rgb(100,100,100);
     text-transform: uppercase;
     font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    letter-spacing: 2px;
+    border-bottom: solid rgba(100,100,100,.5) thin;
 }
 
 /* FAIRE RESPONSIVE NAVBAR*/
@@ -226,7 +250,7 @@ But well for now it works  */
     text-align: center;
     font-weight: bold;
     color: darkblue;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 .landing #input .placeholder {
@@ -313,3 +337,45 @@ But well for now it works  */
 }
 
 /* Pricing */
+
+/* For desktop */
+
+
+
+/* For mobile */
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+    color: black;
+}
+
+.terms ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer .terms ul li {
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+    color: hsl(250, 0%, 30%);
+}
+
+.terms {
+    background-color: rgb(245,245,245);
+    padding: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
