@@ -1,5 +1,4 @@
 .header {
-  display: block;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -18,7 +17,9 @@
   letter-spacing: 3px;
   color: #646464;
   text-transform: uppercase;
-  grid-area: "logo";
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
   -ms-grid-column-align: start;
       justify-self: start;
   -ms-flex-item-align: center;
@@ -144,6 +145,200 @@
           transform: scale(105%);
   background-color: #ffffc8;
   cursor: pointer;
+}
+
+.prop1 {
+  grid-area: prop1;
+}
+
+.prop2 {
+  grid-area: prop2;
+}
+
+.prop3 {
+  grid-area: prop3;
+}
+
+@media (min-width: 100px) {
+  .container2_valueprop {
+    display: -ms-grid;
+    display: grid;
+    padding: 70px;
+        grid-template-areas: "prop1" "prop2" "prop3";
+    grid-gap: 30px;
+    grid-auto-rows: 1fr;
+  }
+}
+
+@media (min-width: 600px) {
+  .container2_valueprop {
+    display: -ms-grid;
+    display: grid;
+    padding: 30px;
+        grid-template-areas: "prop1 prop2 prop3";
+    grid-gap: 30px;
+    grid-auto-columns: 1fr;
+  }
+}
+
+.icons {
+  width: min(15vw, 100px);
+  height: auto;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+.prop1, .prop2, .prop3 {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: solid black thin;
+}
+
+.prop1 p, .prop2 p, .prop3 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.prop1:hover, .prop2:hover, .prop3:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+.theme {
+  margin: 2vh 0 2vh 0;
+}
+
+.howitworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: linear-gradient(190deg, rgba(5, 5, 5, 0.4), rgba(0, 0, 0, 0.4)), url(https://phys.org/newman/gfx/news/hires/2012/auroraboreal.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media (min-width: 100px) {
+  #video {
+    height: 20vh;
+    width: 40vh;
+  }
+}
+
+@media (min-width: 500px) {
+  #video {
+    height: 40vh;
+    width: 60vh;
+  }
+}
+
+@media (min-width: 800px) {
+  #video {
+    height: 60vh;
+    width: 100vh;
+  }
+}
+
+@media (min-width: 700px) {
+  .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    background-color: red;
+  }
+  .products div {
+    border: solid black thin;
+    background-color: blue;
+    height: 0px;
+  }
+  .products div img {
+    width: 25vw;
+    height: auto;
+  }
+  .products div p {
+    position: relative;
+    background-color: yellow;
+    height: 20vh;
+    /*z-index: -999;*/
+    width: auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+.footer {
+  grid-area: footer;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: white;
+  color: black;
+}
+
+.footer .terms {
+  background-color: whitesmoke;
+  padding: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.footer .terms ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer .terms ul li {
+  list-style-type: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer .terms .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 0.9rem;
+  color: #4d4d4d;
 }
 
 * {

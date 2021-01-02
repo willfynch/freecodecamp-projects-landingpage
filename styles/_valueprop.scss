@@ -1,0 +1,62 @@
+
+.prop1 {
+    grid-area: prop1;
+}
+
+.prop2 {
+    grid-area: prop2;
+}
+
+.prop3 {
+    grid-area: prop3;
+}
+
+@media (min-width: 100px) {
+    .container2_valueprop {
+        display: grid;
+        padding: 70px;
+        grid-template-areas:
+        "prop1"
+        "prop2"
+        "prop3";
+        grid-gap: $gapsize;
+        grid-auto-rows: 1fr;
+    }
+}
+
+@media (min-width: 600px) {
+    .container2_valueprop {
+        display: grid;
+        padding: $gridpadding;
+        grid-template-areas: "prop1 prop2 prop3";
+        grid-gap: $gapsize;
+        grid-auto-columns: 1fr;
+    }
+}
+
+.icons {
+    width: unquote("min(15vw, 100px)");
+    height: auto;
+    filter: brightness(0);
+}
+
+.prop1, .prop2, .prop3 {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: solid black thin;
+    p{
+        display: flex;
+        text-align: left;
+    }
+}
+
+.prop1:hover, .prop2:hover, .prop3:hover{
+    transform: scale(110%);
+}
+
+.theme {
+    margin: 2vh 0 2vh 0;
+}
+

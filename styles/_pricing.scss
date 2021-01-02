@@ -1,0 +1,43 @@
+
+@media (min-width: 700px) {
+    .products {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        background-color: red;
+
+        div {
+            border: solid black thin;
+            background-color: blue;
+            height: 0px;
+
+            img {
+                width: 25vw;
+                height: auto;
+            }
+
+            p  {
+                position: relative;
+                background-color: yellow;
+                height: 20vh;
+                /*z-index: -999;*/
+                width: auto;
+                transition: all 0.3s ease;
+            }
+
+            img:hover + p  {
+
+                
+                
+            }
+
+            img:hover  {
+
+               
+            }
+
+        }
+    }   
+
+}

@@ -1,5 +1,4 @@
 .header {
-    display: block;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -15,7 +14,7 @@
         letter-spacing: 3px;
         color: rgb(100,100,100);
         text-transform: uppercase;
-        grid-area: "logo";
+        grid-area: logo;
         justify-self: start;
         align-self: center;
     }
