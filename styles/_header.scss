@@ -1,0 +1,50 @@
+.header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: grid;
+    grid-template-areas:"logo navbar";
+    grid-gap: $gapsize;
+    height: 8vh;
+    padding: 0 20px 0 20px;
+    background-color: white;
+    box-shadow: inset 0 5px 5px rgb(220,220,220);
+
+    .logo {
+        letter-spacing: 3px;
+        color: rgb(100,100,100);
+        text-transform: uppercase;
+        grid-area: "logo";
+        justify-self: start;
+        align-self: center;
+    }
+
+    .navbar {
+        grid-area: navbar;
+        justify-self: end;
+        align-self: center;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                margin: 0 8px 0 8px;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(100,100,100);
+                    text-transform: uppercase;
+                    font-size: 0.9rem;
+                    transition: all 0.3s ease;
+                }
+
+                a:hover {
+                    letter-spacing: 2px;
+                    border-bottom: solid rgba(100,100,100,.5) thin;
+                }
+            }
+        } 
+    }
+}

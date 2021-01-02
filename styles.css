@@ -1,36 +1,16 @@
-:root {
-    --gap-size: 30px;
-    --grid-padding: 30px;
-}
+
 
 /*Clear formatting*/
 
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+
 
 /* Remove formatting from links*/
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-body {
-    overflow: scroll;
-    font-family: "Helvetica", sans-serif;
-}
 
 /* GENERAL STUFF LAYOUT (not grids)*/
 
-.header {
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-}
+
 
 .landing {
     background-image: linear-gradient(180deg, rgba(7,50,45,.2), rgba(0,50,50,.2)), url(https://wallpapercave.com/wp/RFcEpT0.jpg);
@@ -54,27 +34,6 @@ body {
 /* Header : will be modified afterwards to something more simple
 But well for now it works  */
 
-.logo {
-    grid-area: logo;
-    justify-self: start;
-    align-self: center;
-}
-
-.navbar {
-    grid-area: navbar;
-    justify-self: end;
-    align-self: center;
-}
-
-/*  header grid */
-
-.header {
-        display: grid;
-        grid-template-areas:"logo navbar";
-        grid-gap: var(--gap-size);
-        height: 8vh;
-        padding: 0 20px 0 20px;
-}
 
 
 /* Value propositions*/
@@ -215,38 +174,13 @@ But well for now it works  */
 
 /* navbar*/
 
-.header {
-        background-color: white;
-        box-shadow: inset 0 5px 5px rgb(220,220,220);
-}
 
-.logo {
-    letter-spacing: 3px;
-    color: rgb(100,100,100);
-    text-transform: uppercase;
-}
 
-.navbar ul {
-    display: flex;
-    list-style-type: none;
-}
 
-.navbar ul li {
-    margin: 0 8px 0 8px;
-}
 
-.navbar ul li a {
-    text-decoration: none;
-    color: rgb(100,100,100);
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-}
 
-.navbar ul li a:hover {
-    letter-spacing: 2px;
-    border-bottom: solid rgba(100,100,100,.5) thin;
-}
+
+
 
 /* FAIRE RESPONSIVE NAVBAR*/
 
