@@ -1,0 +1,65 @@
+.landing {
+    background-image: linear-gradient(180deg, rgba(7,50,45,.2), rgba(0,50,50,.2)), url(https://wallpapercave.com/wp/RFcEpT0.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+
+    h1 {
+        color: white;
+        font-size: unquote("min(10vw,72px)");
+    }
+
+    p {
+        color: white;
+        font-weight: lighter;
+        font-size: unquote("min(3vw, 1rem)");
+        text-transform: uppercase;
+    }
+
+    .mailform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 50px;
+        font-family: "Helvetica", sans-serif;
+    
+    }
+
+    #name {
+        width: 50vw;
+        height: 5vh;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: darkblue;
+        text-transform: uppercase;
+    }
+
+    #input .placeholder {
+        color: silver;
+    }
+
+    #submit {
+        position: relative;
+        top: 15px;
+        width: 25vw;
+        height: 6vh;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(255,255,0);
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+    #submit:hover {
+        transform: scale(105%);
+        background-color: rgb(255,255,200);
+        cursor: pointer;
+    }
+}

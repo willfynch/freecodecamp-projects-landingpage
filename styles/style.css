@@ -62,6 +62,90 @@
   border-bottom: solid rgba(100, 100, 100, 0.5) thin;
 }
 
+.landing {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 50, 45, 0.2)), to(rgba(0, 50, 50, 0.2))), url(https://wallpapercave.com/wp/RFcEpT0.jpg);
+  background-image: linear-gradient(180deg, rgba(7, 50, 45, 0.2), rgba(0, 50, 50, 0.2)), url(https://wallpapercave.com/wp/RFcEpT0.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 5px;
+}
+
+.landing h1 {
+  color: white;
+  font-size: min(10vw,72px);
+}
+
+.landing p {
+  color: white;
+  font-weight: lighter;
+  font-size: min(3vw, 1rem);
+  text-transform: uppercase;
+}
+
+.landing .mailform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 50px;
+  font-family: "Helvetica", sans-serif;
+}
+
+.landing #name {
+  width: 50vw;
+  height: 5vh;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: darkblue;
+  text-transform: uppercase;
+}
+
+.landing #input .placeholder {
+  color: silver;
+}
+
+.landing #submit {
+  position: relative;
+  top: 15px;
+  width: 25vw;
+  height: 6vh;
+  border-radius: 5px;
+  border: none;
+  background-color: yellow;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.landing #submit:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  background-color: #ffffc8;
+  cursor: pointer;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
