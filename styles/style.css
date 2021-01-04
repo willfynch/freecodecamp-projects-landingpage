@@ -254,8 +254,33 @@
   }
 }
 
-@media (min-width: 100px) {
-  .products {
+.pricing {
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
+  margin: 30px 0 0 0;
+  background-color: #fff;
+}
+
+@media (pointer: fine) {
+  .pricing .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 40px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -263,88 +288,101 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 100vh;
-    background-color: red;
-    padding: 20px 0 20px 0;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
-  .products .product {
-    border: solid black thin;
-    background-color: blue;
-    z-index: 0;
+  .pricing .card .img8x {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -80px;
+    left: 7px;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   }
-  .products .product img {
-    width: 60vw;
-    height: auto;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    z-index: 999;
-    overflow: hidden;
+  .pricing .card .img8x img {
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+    border-radius: 4px;
   }
-  .products .product img:last-child, .products .product img:hover {
-    overflow: visible;
-  }
-  .products .product .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: yellow;
-    z-index: 1;
-    width: auto;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .products .product img:hover {
+  .pricing .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
     opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .pricing .card:hover {
+    min-height: 420px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .pricing .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
   }
 }
 
-@media (min-width: 700px) {
-  .products {
+@media (pointer: coarse) {
+  .pricing .card {
+    position: relative;
+    max-width: 300px;
+    min-height: 420px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 40px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100vh;
-    background-color: red;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
-  .products div {
-    border: solid black thin;
-    background-color: blue;
-    height: 0px;
-  }
-  .products div img {
-    width: 25vw;
-    height: auto;
-  }
-  .products div p {
+  .pricing .card .img8x {
     position: relative;
-    background-color: yellow;
-    height: 20vh;
-    /*z-index: -999;*/
-    width: auto;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    width: 260px;
+    height: 260px;
+    top: -80px;
+    left: 7px;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   }
+  .pricing .card .img8x img {
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  .pricing .card .content {
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+  }
+}
+
+.pricing .card .content h2 {
+  color: #646464;
 }
 
 .footer {
@@ -416,5 +454,10 @@ a {
 body {
   overflow-y: scroll;
   font-family: "Helvetica", sans-serif;
+}
+
+hr {
+  color: silver;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
