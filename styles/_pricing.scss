@@ -1,9 +1,7 @@
-
-    @mixin stylingfont()
     
-    .pricing { 
+    .pricingflexbox { 
         position: relative;
-        min-height: 100vh;
+        min-height: 85vh;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -26,13 +24,11 @@
             box-shadow: 0 5px 10px rgba(0,0,0,0.5);
             transition: 0.3s ease-in-out;
     
-            
-    
             .img8x {
                 position: relative;
                 width: 260px;
                 height: 260px;
-                top: -80px;
+                top: -60px;
                 left: 7px;
                 box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     
@@ -42,7 +38,6 @@
                     max-width: 100%;
                     border-radius: 4px;
                 }
-    
             }
     
             .content {
@@ -59,9 +54,11 @@
         }
     
         .card:hover {
-            min-height: 420px;
-            transition: 0.3s ease-in-out;
+            height: 420px;
+            
+            
             .content {
+                
                 visibility: visible;
                 opacity: 1;
                 margin-top: -60px;
@@ -79,7 +76,7 @@
         .card {
                 position: relative;
                 max-width: 300px;
-                min-height: 420px;
+                height: 420px;
                 background: #fff;
                 margin: 30px 10px;
                 padding: 40px 15px;
@@ -123,10 +120,25 @@
             .content {
                 h2 {
                     color: rgb(100,100,100);
-
-                    /* I was creating a mixin function
-                    to style the card content's fonts.*/
+                    font-weight: lighter;
+                    text-transform: uppercase;
+                    font-size: 1.3rem;
                 }
+
+                p {
+                    color: rgb(100,100,100);
+                    font-weight: lighter;
+                    font-size: 0.9rem;
+                }
+
+                .price {
+                    display: inline-block;
+                    width: 60px;
+                    padding: 5px;
+                    border: solid rgba(100,100,100,.8) thin;
+                    border-radius: 5px;
+                }
+
             }
         }
 

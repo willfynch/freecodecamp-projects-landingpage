@@ -26,3 +26,14 @@ body {
     color: silver;
     opacity: 0.5;
   }
+
+  .titlefont {
+    color: rgba(100,100,100,.8);
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    letter-spacing: 10px;
+    background-color: rgba(250,250,250,.8);
+  }
